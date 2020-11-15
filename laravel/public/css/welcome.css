@@ -1,0 +1,24 @@
+body {
+    background-image: url("/img/welcome2.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#button-wrapper {
+    text-align: center;
+}
+
+button {
+    margin: 15px;
+}

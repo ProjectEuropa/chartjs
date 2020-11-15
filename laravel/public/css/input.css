@@ -1,0 +1,33 @@
+#input-form {
+    border: 5px solid green;
+    border-radius: 20px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+h2 {
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0 10px;
+    background: linear-gradient(transparent 50%, lightblue 50%);
+    display: inline-block;
+}
+
+h4 {
+    padding: 0 10px;
+    margin-top: 10px;
+    background: linear-gradient(transparent 50%, yellow 50%);
+    display: inline-block;
+}
+
+.long {
+    font-size: 1.2rem;
+}
+
+.badge-danger {
+    display: none;
+    margin-left: 5px;
+}

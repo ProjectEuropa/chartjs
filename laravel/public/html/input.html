@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>入力画面</title>
+
+        <!-- CSS読み込み -->
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/fontawesome.css" />
+        <link rel="stylesheet" href="../css/input.css" />
+
+        <!-- Javascript読み込み -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fontawesome.js"></script>
+        <script src="../js/include.js"></script>
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <h2>入力画面</h2>
+
+        <form>
+            <div class="container" id="input-form">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>基本情報</h4>
+                        <p>
+                            <label>日付</label>
+                            <input type="date" name="ymd" />
+                        </p>
+                        <p>施設名：ほげほげ介護ホーム</p>
+                        <input
+                            type="hidden"
+                            name="facility_id"
+                            value="ほげほげ介護ホーム"
+                        />
+                        <p>所在地：神奈川県横浜市中区</p>
+                            <label>利用者数</label>
+                            <input type="text" size="4" name="user_count" />
+                        </p>
+                        <input type="hidden" name="city_id" value="">
+                        <input type="hidden" name="ward_id" value="">
+                        <p>
+                            <label>スタッフ数</label>
+                            <input type="text" size="4" name="staff_count" />
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>PCR検査陽性者数</h4>
+                        <p>
+                            <label>利用者</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="positive_user_count"
+                            />
+                        </p>
+                        <p>
+                            <label>利用者同居人</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="positive_user_family_count"
+                            />
+                        </p>
+                        <p>
+                            <label>スタッフ</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="positive_staff_count"
+                            />
+                        </p>
+                        <p>
+                            <label>スタッフ同居人</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="positive_staff_family_count"
+                            />
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>PCR検査対象者数</h4>
+                        <p>
+                            <label>利用者</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="target_user_count"
+                            />
+                        </p>
+                        <p>
+                            <label>利用者同居人</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="target_user_staff_count"
+                            />
+                        </p>
+                        <p>
+                            <label>スタッフ</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="target_staff_count"
+                            />
+                        </p>
+                        <p>
+                            <label>スタッフ同居人</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="target_staff_family_count"
+                            />
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>PPE関連</h4>
+                        <p>
+                            <label>使用訪問数</label>
+                            <input
+                                type="text"
+                                size="4"
+                                name="ppe_visit_count"
+                            />
+                        </p>
+                        <p>
+                            <label>使用数</label>
+                            <input type="text" size="4" name="ppe_used_count" />
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>アンケート（医療機関関連）</h4>
+                        <p>
+                            <label
+                                >質問1：緊急搬送先が見つからないことがある</label
+                            ><br />
+                            <select name="answer_to_q1_1">
+                                <option>頻繁にある</option>
+                                <option>時々ある</option>
+                                <option>ほとんど無い</option>
+                                <option>一度も無い</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問2：PCR陽性でも自施設・自宅で療養することがある</label
+                            ><br />
+                            <select name="answer_to_q1_2">
+                                <option>頻繁にある</option>
+                                <option>時々ある</option>
+                                <option>ほとんど無い</option>
+                                <option>一度も無い</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問3：感染の疑いがあってもPCR検査が受けられないことがある</label
+                            ><br />
+                            <select name="answer_to_q1_3">
+                                <option>頻繁にある</option>
+                                <option>時々ある</option>
+                                <option>ほとんど無い</option>
+                                <option>一度も無い</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問4：往診・訪問看護を依頼しても断られることがある</label
+                            ><br />
+                            <select name="answer_to_q1_4">
+                                <option>頻繁にある</option>
+                                <option>時々ある</option>
+                                <option>ほとんど無い</option>
+                                <option>一度も無い</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問5：提携先から往診・訪問看護を断られることがある</label
+                            ><br />
+                            <select name="answer_to_q1_5">
+                                <option>頻繁にある</option>
+                                <option>時々ある</option>
+                                <option>ほとんど無い</option>
+                                <option>一度も無い</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>アンケート（支援ニーズ）</h4>
+                        <p>
+                            <label>質問1：PPEが足りない</label><br />
+                            <select name="answer_to_q2_1">
+                                <option>非常に困っている</option>
+                                <option>困っている</option>
+                                <option>たまに困っている</option>
+                                <option>困っていない</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>質問2：感染対策で人が足りない</label><br />
+                            <select name="answer_to_q2_2">
+                                <option>非常に困っている</option>
+                                <option>困っている</option>
+                                <option>たまに困っている</option>
+                                <option>困っていない</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問3：感染予防・防御策の実装で困っている</label
+                            ><br />
+                            <select name="answer_to_q2_3">
+                                <option>非常に困っている</option>
+                                <option>困っている</option>
+                                <option>たまに困っている</option>
+                                <option>困っていない</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label
+                                >質問4：利用者・家族への情報提供の内容に困っている</label
+                            ><br />
+                            <select name="answer_to_q2_4">
+                                <option>非常に困っている</option>
+                                <option>困っている</option>
+                                <option>たまに困っている</option>
+                                <option>困っていない</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success">
+                            登録
+                        </button>
+                        <button type="reset" class="btn btn-warning">
+                            リセット
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

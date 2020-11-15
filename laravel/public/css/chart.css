@@ -1,0 +1,32 @@
+#search-form {
+    border: 5px solid teal;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+h4 {
+    padding: 0 10px;
+    background: linear-gradient(transparent 50%, yellow 50%);
+    display: inline-block;
+}
+
+button {
+    margin-left: 20px;
+}
+
+#title {
+    background: linear-gradient(transparent 50%, lightblue 50%);
+}
+
+#search {
+    margin-top: 20px;
+}

@@ -1,0 +1,22 @@
+table {
+    text-align: center;
+}
+
+th {
+    vertical-align: middle !important;
+}
+
+button {
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0 10px;
+    display: inline-block;
+    background: linear-gradient(transparent 50%, orange 50%);
+}
+h4 {
+    display: inline-block;
+}
